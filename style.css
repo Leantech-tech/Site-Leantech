@@ -87,6 +87,140 @@ h3 {
     }
 }
 
+/* Header transparente sobre o hero - branca no hero, preta ao rolar */
+.header-transparent {
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.header-transparent .nav-links a {
+    color: #ffffff !important;
+}
+
+.header-transparent .nav-links a:hover {
+    color: var(--primary-light) !important;
+}
+
+.header-transparent .mobile-menu-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.header-transparent .dropdown-menu {
+    background: rgba(15, 23, 42, 0.85);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header-transparent .dropdown-menu li a {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.header-transparent .dropdown-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-light) !important;
+}
+
+/* Ao rolar: fundo branco e letra preta */
+.header-transparent.scrolled {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-transparent.scrolled .nav-links a {
+    color: #0f172a !important;
+}
+
+.header-transparent.scrolled .nav-links a:hover {
+    color: var(--primary) !important;
+}
+
+.header-transparent.scrolled .mobile-menu-btn {
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    color: #1e293b;
+}
+
+.header-transparent.scrolled .dropdown-menu {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-transparent.scrolled .dropdown-menu li a {
+    color: #475569 !important;
+}
+
+.header-transparent.scrolled .dropdown-menu li a:hover {
+    background: rgba(37, 99, 235, 0.05);
+    color: var(--primary) !important;
+}
+
+/* Hero ocupa tela inteira quando header é transparente */
+.header-transparent ~ main .hero-slideshow {
+    margin-top: 0 !important;
+}
+
+.hero-slideshow {
+    height: 100vh !important;
+    min-height: 500px;
+}
+
+.hero-slideshow .slideshow-container {
+    height: 100vh;
+}
+
+/* Correção hero imagem única - ocupa 100% sem metade branca */
+.hero-slideshow.hero-single-image {
+    position: relative;
+    height: 100vh !important;
+    min-height: 500px;
+    overflow: hidden;
+    background: #0f172a;
+}
+
+.hero-slideshow.hero-single-image .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+.hero-slideshow.hero-single-image .hero-bg img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .header-transparent .nav-links.nav-active {
+        background: rgba(15, 23, 42, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .header-transparent.scrolled .nav-links.nav-active {
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .header-transparent .nav-links.nav-active li a {
+        color: #ffffff !important;
+    }
+    .header-transparent.scrolled .nav-links.nav-active li a {
+        color: #1e293b !important;
+    }
+}
+
 .section-title {
     margin-bottom: 4rem;
 }
@@ -116,6 +250,7 @@ header.scrolled {
     background: rgba(255, 255, 255, 0.98);
 }
 
+.nav,
 nav {
     display: flex;
     justify-content: space-between;
@@ -423,6 +558,22 @@ nav {
     margin-bottom: 2.5rem;
     line-height: 1.8;
     max-width: 600px;
+}
+
+.hero-tagline {
+    font-size: 64px !important;
+    font-weight: 300 !important;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+    .hero-tagline {
+        font-size: 38px !important;
+    }
 }
 
 .hero-highlights {

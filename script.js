@@ -607,3 +607,34 @@ if (carousel && track && cards.length > 0) {
     createDots();
     goToSlide(0);
 }
+
+// Automation Section Tabs
+function initAutomationTabs() {
+    const tabs = document.querySelectorAll('.automation-tab');
+    const panels = document.querySelectorAll('.automation-panel');
+    if (tabs.length === 0 || panels.length === 0) return;
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetId = tab.dataset.target;
+            if (!targetId) return;
+
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            panels.forEach(p => {
+                p.classList.remove('active');
+            });
+
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            const targetPanel = document.getElementById(targetId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initAutomationTabs);

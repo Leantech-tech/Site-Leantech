@@ -17,7 +17,7 @@
     <meta property="og:title" content="Leantech - Especialistas em TI e Automação Comercial">
     <meta property="og:description"
         content="Conserto de computadores, impressoras e venda de equipamentos de TI e automação comercial com tecnologia de ponta em Ubatuba - SP.">
-    <meta property="og:image" content="https://leantechautomacao.com.br/logo.png">
+    <meta property="og:image" content="https://leantechautomacao.com.br/logo_fundo_transparente.png">
     <meta property="og:locale" content="pt_BR">
 
     <!-- Twitter -->
@@ -26,7 +26,7 @@
     <meta property="twitter:title" content="Leantech - Especialistas em TI e Automação Comercial">
     <meta property="twitter:description"
         content="Conserto de computadores, impressoras e venda de equipamentos de TI e automação comercial com tecnologia de ponta em Ubatuba - SP.">
-    <meta property="twitter:image" content="https://leantechautomacao.com.br/logo.png">
+    <meta property="twitter:image" content="https://leantechautomacao.com.br/logo_fundo_transparente.png">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -34,7 +34,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Leantech Automação Comercial",
-        "image": "https://leantechautomacao.com.br/logo.png",
+        "image": "https://leantechautomacao.com.br/logo_fundo_transparente.png",
         "url": "https://leantechautomacao.com.br/",
         "telephone": "+55 12 3833-3927",
         "address": {
@@ -65,23 +65,23 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 <body>
 
-    <header id="header">
-        <div class="container-fluid nav">
-            <a href="#home" style="display: block;"><img src="logo.png" alt="Leantech Automação Comercial"
+    <header id="header" class="header-transparent">
+        <div class="container-fluid nav" style="display: flex !important; justify-content: space-between !important; gap: 2rem !important; padding-left: 4rem !important; padding-right: 4rem !important; align-items: center !important;">
+            <a href="#home" style="display: block;"><img src="logo_fundo_transparente.png" alt="Leantech Automação Comercial"
                     class="logo-img"></a>
-            <ul class="nav-links" id="main-navigation" role="menubar">
+            <ul class="nav-links" id="main-navigation" role="menubar" style="margin-left: auto !important;">
 
                 <li class="dropdown">
                     <a href="#produtos">Produtos <i class="fas fa-chevron-down"></i></a>
@@ -109,57 +109,15 @@
 
     <main>
         <!-- Hero Slideshow with Overlay Text -->
-        <section id="home" class="hero-slideshow">
-            <div class="slideshow-container">
-                <div class="slide active">
-                    <picture>
-                        <source srcset="hero_slide_clean_1.webp" type="image/webp">
-                        <source srcset="hero_slide_clean_1.jpg" type="image/jpeg">
-                        <img src="hero_slide_clean_1.png" alt="PC Gamer Expert Leantech" width="1920" height="1024">
-                    </picture>
-                </div>
-
-                <div class="slide">
-                    <picture>
-                        <source srcset="hero_slide_clean_2.webp" type="image/webp">
-                        <source srcset="hero_slide_clean_2.jpg" type="image/jpeg">
-                        <img src="hero_slide_clean_2.png" alt="Infraestrutura de TI Leantech" width="1920" height="1024">
-                    </picture>
-                </div>
+        <section id="home" class="hero-slideshow hero-single-image">
+            <div class="hero-bg">
+                <img src="imagem hero.jpg" alt="Hero Leantech">
             </div>
-
-            <!-- Text Overlay -->
             <div class="hero-overlay">
                 <div class="container">
                     <div class="hero-content">
-                        <h1>Sua Tecnologia em <br><span>Mãos de Especialistas</span></h1>
-                        <p>Soluções completas em reparo de hardware, manutenção de impressoras e suprimentos para
-                            automação
-                            comercial. Sofisticação e precisão técnica para o seu negócio.</p>
-                        <div class="hero-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-award"></i>
-                                <span><strong>17 anos</strong> de experiência no mercado de tecnologia</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-handshake"></i>
-                                <span>Parceria oficial com <strong>JRS Sistemas</strong> e
-                                    <strong>Saurus</strong></span>
-                            </div>
+                        <p class="hero-tagline" style="font-size: 64px !important; font-weight: 300 !important; line-height: 1.25;">Soluções digitais<br>construídas para o seu negócio.</p>
                         </div>
-
-                        <div class="hero-cta-group">
-                            <a href="https://wa.me/551238333927?text=Olá!%20Gostaria%20de%20um%20orçamento."
-                                target="_blank" rel="noopener noreferrer" class="btn-cta">
-                                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-                            </a>
-                            <a href="https://wa.me/551238333927?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
-                                target="_blank" rel="noopener noreferrer" class="btn-cta btn-outline">
-                                <i class="fas fa-file-invoice-dollar"></i> Solicitar Orçamento
-                            </a>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>
@@ -300,7 +258,6 @@
                 </div>
             </div> <!-- container closes here -->
         </section>
-
 
         <!-- Testimonials Section -->
         <!-- Testimonials Section -->
@@ -749,7 +706,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="script.js"></script>
 </body>
