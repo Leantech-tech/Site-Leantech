@@ -404,38 +404,48 @@
                         tecnologia de ponta.</p>
                 </div>
 
-                <div class="automation-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 4rem; margin-top: 4rem;">
+                <div class="automation-tabs" role="tablist" aria-label="Sistemas de automação">
+                    <button class="automation-tab active" data-target="panel-jrs" role="tab"
+                        aria-selected="true">JRS Sistemas</button>
+                    <button class="automation-tab" data-target="panel-saurus" role="tab" aria-selected="false">Saurus
+                        Software</button>
+                    <button class="automation-tab" data-target="panel-ponto" role="tab" aria-selected="false">Relógio de
+                        Ponto</button>
+                    <button class="automation-tab" data-target="panel-acesso" role="tab" aria-selected="false">Controle
+                        de Acesso</button>
+                </div>
+
+                <div class="automation-panels">
                     <!-- JRS Sistemas -->
-                    <div class="automation-card glass-panel"
-                        style="display: flex; flex-direction: column; height: 100%; padding: 3rem;">
+                    <div class="automation-panel automation-card glass-panel active" id="panel-jrs"
+                        style="flex-direction: column; height: 100%; padding: 1.25rem;">
                         <div
-                            style="height: 140px; display: flex; align-items: center; justify-content: center; margin-bottom: 2.5rem;">
+                            style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                             <img src="logo_jrs_new.png" alt="JRS Sistemas"
-                                style="max-height: 100%; max-width: 320px; mix-blend-mode: multiply;">
+                                style="max-height: 100%; max-width: 240px; mix-blend-mode: multiply;">
                         </div>
-                        <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.8rem;">JRS Sistemas</h3>
-                        <p style="margin-bottom: 2rem; font-size: 1rem; color: var(--text-muted); line-height: 1.8;">
+                        <h3 style="color: var(--primary); margin-bottom: 0.75rem; font-size: 1.4rem;">JRS Sistemas</h3>
+                        <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
                             Sistemas integrados robustos para gestão completa de varejo e indústria. Com mais de 33 anos
                             de tradição, a JRS oferece a estabilidade que seu negócio precisa com a inovação que o
                             mercado exige.
                         </p>
 
-                        <div style="margin-bottom: 2.5rem;">
+                        <div style="margin-bottom: 1.25rem;">
                             <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-check-circle"
                                         style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>PDV Completo:</strong> Frente de caixa ágil com integração TEF e CRM
                                         Bônus.</span>
                                 </li>
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-check-circle"
                                         style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>Gestão Integrada:</strong> Controle total de estoque, financeiro
                                         (AP/AR) e compras.</span>
                                 </li>
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-check-circle"
                                         style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>Inovação Digital:</strong> Catálogo online (JRS Vitrine) e consultoria
@@ -448,33 +458,33 @@
                     </div>
 
                     <!-- Saurus Software -->
-                    <div class="automation-card glass-panel"
-                        style="display: flex; flex-direction: column; height: 100%; padding: 3rem;">
+                    <div class="automation-panel automation-card glass-panel" id="panel-saurus"
+                        style="flex-direction: column; height: 100%; padding: 1.25rem;">
                         <div
-                            style="height: 140px; display: flex; align-items: center; justify-content: center; margin-bottom: 2.5rem;">
+                            style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                             <img src="logo_saurus_new.png" alt="Saurus Software"
-                                style="max-height: 100%; max-width: 320px; mix-blend-mode: multiply;">
+                                style="max-height: 100%; max-width: 240px; mix-blend-mode: multiply;">
                         </div>
-                        <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.8rem;">Saurus Software
+                        <h3 style="color: var(--primary); margin-bottom: 0.75rem; font-size: 1.4rem;">Saurus Software
                         </h3>
-                        <p style="margin-bottom: 2rem; font-size: 1rem; color: var(--text-muted); line-height: 1.8;">
+                        <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
                             Líder em gestão 100% em nuvem (SaaS), a Saurus foca em mobilidade e agilidade. Gerencie seu
                             negócio de qualquer lugar com a segurança e o suporte do ecossistema Grupo J. Safra.
                         </p>
 
-                        <div style="margin-bottom: 2.5rem;">
+                        <div style="margin-bottom: 1.25rem;">
                             <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-cloud" style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>Saurus Retaguarda:</strong> Gestão 100% em nuvem acessível de qualquer
                                         lugar.</span>
                                 </li>
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-mobile-alt" style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>Saurus Mobile:</strong> Vendas externas e checkout móvel para maior
                                         agilidade.</span>
                                 </li>
-                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
                                     <i class="fas fa-utensils" style="color: var(--primary); margin-top: 0.3rem;"></i>
                                     <span><strong>Soluções Food:</strong> Gestão completa para restaurantes e delivery
                                         com integração iFood.</span>
@@ -482,6 +492,83 @@
                             </ul>
                         </div>
                         <a href="automacao-saurus.html" class="btn-cta btn-outline"
+                            style="text-align: center; margin-top: auto;">Saber mais</a>
+                    </div>
+
+                    <!-- Relógio de Ponto -->
+                    <div class="automation-panel automation-card glass-panel" id="panel-ponto"
+                        style="flex-direction: column; height: 100%; padding: 1.25rem;">
+                        <div
+                            style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <img src="logo_transparente.png" alt="Control iD - Relógio de Ponto"
+                                style="max-height: 100%; max-width: 200px; mix-blend-mode: multiply;">
+                        </div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.75rem; font-size: 1.4rem;">Relógio de Ponto
+                        </h3>
+                        <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+                            Registros confiáveis que protegem sua empresa de riscos trabalhistas. Sistema completo,
+                            fácil de usar e em conformidade com a legislação brasileira.
+                        </p>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-shield-alt" style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>100% Conforme:</strong> Atende à Portaria 671 e à legislação
+                                        trabalhista.</span>
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-bolt" style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>Implementação em 24h:</strong> Comece a usar no dia seguinte à
+                                        contratação.</span>
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-check-circle"
+                                        style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>Demonstração gratuita:</strong> Sem compromisso, com suporte
+                                        incluído.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="automacao-relogio-de-ponto.html" class="btn-cta btn-outline"
+                            style="text-align: center; margin-top: auto;">Saber mais</a>
+                    </div>
+
+                    <!-- Controle de Acesso -->
+                    <div class="automation-panel automation-card glass-panel" id="panel-acesso"
+                        style="flex-direction: column; height: 100%; padding: 1.25rem;">
+                        <div
+                            style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-fingerprint" style="font-size: 3rem; color: var(--primary);"></i>
+                        </div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.75rem; font-size: 1.4rem;">Controle de Acesso
+                        </h3>
+                        <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+                            Segurança e praticidade para gerenciar quem entra e sai da sua empresa. Soluções com
+                            biometria, cartões e relatórios completos de rastreamento.
+                        </p>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-fingerprint"
+                                        style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>Biometria e Cartões:</strong> Autenticação segura por impressão
+                                        digital ou credencial.</span>
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-door-closed" style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>Controle de Visitantes:</strong> Gestão completa de entrada e saída de
+                                        pessoas.</span>
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                                    <i class="fas fa-chart-line" style="color: var(--primary); margin-top: 0.3rem;"></i>
+                                    <span><strong>Relatórios Completos:</strong> Rastreabilidade total com registros
+                                        detalhados.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="automacao-controle-de-acesso.html" class="btn-cta btn-outline"
                             style="text-align: center; margin-top: auto;">Saber mais</a>
                     </div>
                 </div>
@@ -651,7 +738,7 @@
                                 decoding="async">
                         </div>
                         <div>
-                            <div class="brand-item"><img src="logo_controlid.png" alt="ControlID" loading="lazy"
+                            <div class="brand-item"><img src="logo_transparente.png" alt="ControlID" loading="lazy"
                                     decoding="async"
                                     style="height: 40px; width: auto; mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.1);">
                             </div>

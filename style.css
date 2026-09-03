@@ -1585,3 +1585,77 @@ footer {
     border-color: var(--primary);
     box-shadow: 0 0 0 3px var(--primary-glow);
 }
+
+/* Automação - Tabs de Sistemas */
+.automation-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.automation-tab {
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
+    border: 2px solid #e2e8f0;
+    background: #ffffff;
+    color: var(--text-main);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.automation-tab:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.automation-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.automation-panels {
+    display: grid;
+    grid-template-columns: minmax(260px, 520px);
+    justify-content: center;
+}
+
+.automation-panel {
+    display: none;
+}
+
+.automation-panel.active {
+    display: flex;
+    animation: panelFadeIn 0.4s ease;
+}
+
+@keyframes panelFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .automation-tab {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .automation-panels {
+        grid-template-columns: 1fr;
+    }
+}
