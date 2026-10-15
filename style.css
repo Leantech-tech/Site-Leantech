@@ -195,7 +195,8 @@ h3 {
     overflow: hidden;
 }
 
-.hero-slideshow.hero-single-image .hero-bg img {
+.hero-slideshow.hero-single-image .hero-bg img,
+.hero-slideshow.hero-single-image .hero-bg video {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -573,6 +574,57 @@ nav {
 @media (max-width: 768px) {
     .hero-tagline {
         font-size: 38px !important;
+    }
+}
+
+/* Hero com vídeo de fundo - acentos ciano */
+.cyan-line {
+    background: linear-gradient(135deg, #22d3ee, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem !important;
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+.hero-cta-group .btn-cta.btn-cyan {
+    background: #22d3ee;
+    color: #082f42;
+    border: 2px solid #22d3ee;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px -10px rgba(34, 211, 238, 0.6);
+}
+
+.hero-cta-group .btn-cta.btn-cyan:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 20px 40px -12px rgba(34, 211, 238, 0.7);
+}
+
+.hero-cta-group .btn-cta.btn-hero-outline {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    color: #ffffff;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.hero-cta-group .btn-cta.btn-hero-outline:hover {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 1rem !important;
     }
 }
 
